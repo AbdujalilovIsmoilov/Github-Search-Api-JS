@@ -1,0 +1,170 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-image: url("../IMG/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.box {
+  height: 500px;
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.content img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 25px 0 0 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.search__box {
+  margin: 25px 0 0 0;
+}
+
+.search {
+  outline: none;
+  width: 90%;
+  text-indent: 10px;
+  font-size: 15px;
+  background-color: silver;
+  outline: none;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+}
+
+.btn {
+  background-color: silver;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.search::placeholder {
+  font-size: 15px;
+  letter-spacing: .4px;
+  color: white;
+}
+
+.content .paragraph {
+  font-size: 20px;
+  letter-spacing: .5px;
+  color: white;
+  line-height: 30px;
+}
+
+.paragraph__active {
+  margin: 25px 0 0 0;
+}
+
+.active__content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0 0 0;
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+}
+
+.secret {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 85%;
+}
+
+/* ========================================== Responsive codes Start ==================================\  */
+@media screen and (max-width: 470px) {
+  .search {
+    outline: none;
+    width: 90%;
+    text-indent: 10px;
+    font-size: 15px;
+    background-color: silver;
+    outline: none;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+  }
+
+  .box {
+    height: 500px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .search {
+    outline: none;
+    width: 90%;
+    text-indent: 10px;
+    font-size: 15px;
+    background-color: silver;
+    outline: none;
+    letter-spacing: 1px;
+    color: white;
+    border: none;
+  }
+
+  .box {
+    height: 500px;
+    width: 325px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .box {
+    height: 500px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+  }
+}
+
+/* ========================================== Responsive codes End ==================================\  */
